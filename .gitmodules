@@ -1,0 +1,3 @@
+[submodule "test-objects-api"]
+	path = test-objects-api
+	url = https://github.com/adrianpothuaud/cucumbot-test-objects-api.git
