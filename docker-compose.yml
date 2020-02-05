@@ -1,0 +1,19 @@
+version: "2"
+services:
+  to-api:
+    container_name: tp-api
+    restart: always
+    build: test-objects-api/
+    environment:
+      - DB_HOST=mongo
+    ports:
+      - "5001:5001"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - ./data:/data/db
+    ports:
+      - "27017:27017"
