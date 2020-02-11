@@ -1,17 +1,16 @@
-version: "2"
+version: "3"
 services:
   to-api:
-    container_name: tp-api
-    restart: always
-    build: test-objects-api/
-    environment:
-      - DB_HOST=mongo
+    image: node:latest
+    volumes:
+      - ./test-objects-api/:/app/
+    working_dir: /app/
+    command: npm start
     ports:
       - "5001:5001"
-    links:
+    depends_on:
       - mongo
   mongo:
-    container_name: mongo
     image: mongo
     volumes:
       - ./data:/data/db

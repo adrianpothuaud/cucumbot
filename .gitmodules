@@ -1,3 +1,6 @@
 [submodule "test-objects-api"]
 	path = test-objects-api
 	url = https://github.com/adrianpothuaud/cucumbot-test-objects-api.git
+[submodule "__auto-tests__"]
+	path = __auto-tests__
+	url = https://github.com/adrianpothuaud/cucumbot-automation-tests.git
