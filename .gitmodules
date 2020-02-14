@@ -4,3 +4,9 @@
 [submodule "__auto-tests__"]
 	path = __auto-tests__
 	url = https://github.com/adrianpothuaud/cucumbot-automation-tests.git
+[submodule "vuejs-client"]
+	path = vuejs-client
+	url = https://github.com/adrianpothuaud/cucumbot-vuejs-client.git
+[submodule "apollo-server"]
+	path = apollo-server
+	url = https://github.com/adrianpothuaud/cucumbot-apollo-server.git
